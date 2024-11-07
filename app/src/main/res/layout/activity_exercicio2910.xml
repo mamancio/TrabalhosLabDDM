@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_euros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:hint="Insira uma valor em Euros" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Button_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolar" />
+
+        <Button
+            android:id="@+id/Button_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="Real" />
+
+        <Button
+            android:id="@+id/Button_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fatec"
+        android:textSize="50sp"
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_voltar"
+        android:onClick="voltarParaTelaAnterior"
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_navegar"
+        android:onClick="navegarParaQuartaPagina"
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_home"
+        android:onClick="voltarParaPrimeiraTela"
+        />
+
+</LinearLayout>
